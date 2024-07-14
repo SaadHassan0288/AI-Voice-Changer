@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AI Voice Changer</string>
+    <string name="todo">todo</string>
+    <string name="home">HOME</string>
+    <string name="ai_voice_generator">AI Voice Generator</string>
+    <string name="ai_voice_npaid_api">AI Voice\nPaid API</string>
+    <string name="features_for_you">Features for you</string>
+    <string name="transform_description">Transform your projects with our\ncutting-edge AI Voice Generator App.</string>
+    <string name="text_nto_audio">Text\nTo Audio</string>
+    <string name="audio_to_voice">Audio\nTo Voice</string>
+</resources>

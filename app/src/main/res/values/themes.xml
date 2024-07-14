@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.AIVoiceChanger" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/bgColor</item>
+        <item name="colorPrimaryVariant">@color/bgColor</item>
+        <item name="colorOnPrimary">@color/bgColor</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/bgColor</item>
+        <item name="colorSecondaryVariant">@color/bgColor</item>
+        <item name="colorOnSecondary">@color/bgColor</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>
