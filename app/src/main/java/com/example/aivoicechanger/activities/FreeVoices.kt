@@ -336,6 +336,7 @@ class FreeVoices : AppCompatActivity() {
         audioPlayer!!.release()
     }
 
+
     fun checkReadPermissions(): Boolean {
         val result = ContextCompat.checkSelfPermission(
             applicationContext,
