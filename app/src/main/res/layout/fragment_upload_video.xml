@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    tools:context=".fragments.UploadVideo">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/generateBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginBottom="60sp"
+        app:cardBackgroundColor="@color/boardColor"
+        app:cardCornerRadius="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:strokeWidth="0sp">
+
+        <TextView
+            android:id="@+id/genText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Generate"
+            android:textColor="@color/btnUnselect"
+            android:textSize="16sp" />
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/uploadLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginBottom="60sp"
+        app:cardBackgroundColor="@color/boardColor"
+        app:cardCornerRadius="14sp"
+        app:layout_constraintBottom_toTopOf="@id/generateBtn">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60sp"
+                android:rotation="180"
+                android:src="@drawable/downloadicon" />
+
+            <TextView
+                android:id="@+id/descrip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Upload Your Video\nFile Should be mp4,Mkv,AVI."
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/uploadBtn"
+                android:layout_width="match_parent"
+                android:layout_height="35sp"
+                android:layout_marginHorizontal="70sp"
+                android:layout_marginTop="40sp"
+                android:layout_marginBottom="30sp"
+                android:baselineAligned="false"
+                app:cardBackgroundColor="@color/btnColor"
+                app:cardCornerRadius="8sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:strokeWidth="0sp">
+
+                <TextView
+                    android:id="@+id/uploadText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Upload"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:id="@+id/simpleMic"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/uploadLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="30sp"
+            android:layout_height="35sp"
+            android:src="@drawable/camera_icon"
+            app:tint="#616365" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6sp"
+            android:gravity="center"
+            android:text=" let your Video\nvoice wave its magic!"
+            android:textColor="#616365"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/audioFileLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_marginHorizontal="20sp"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/boardColor"
+        app:cardCornerRadius="14sp"
+        app:layout_constraintBottom_toTopOf="@id/uploadLayout"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_marginStart="5sp"
+                app:cardCornerRadius="10sp">
+
+                <VideoView
+                    android:id="@+id/videoView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/playBtn"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/play_audio_icon_second" />
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15sp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Video Record"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/dateTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="May 21,2024 7:09 AM"
+                    android:textColor="#7A7C7D"
+                    android:textSize="8sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/deletBtn"
+                android:layout_width="30sp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="15sp"
+                android:paddingHorizontal="5sp"
+                android:src="@drawable/delete_file" />
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

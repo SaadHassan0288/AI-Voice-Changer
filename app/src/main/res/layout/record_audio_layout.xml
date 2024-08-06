@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/boardColor"
+        app:cardCornerRadius="18sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="60sp"
+                android:layout_height="70sp"
+                android:layout_marginTop="45sp"
+                android:src="@drawable/mic_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18sp"
+                android:gravity="center"
+                android:text="Record Your Voice to Convert\ninto Ai Voice"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_marginHorizontal="40sp"
+                android:layout_marginTop="40sp"
+                android:alpha="0.7"
+                android:background="@color/white" />
+
+            <ImageView
+                android:id="@+id/stopIcon"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_marginTop="40sp"
+                android:src="@drawable/pause_audio_icon_second" />
+
+            <TextView
+                android:id="@+id/stopText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="25sp"
+                android:text="Stop Recording"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

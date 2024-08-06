@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:background="@color/bgColor"
     tools:context=".MainActivity">
-    git remote add origin https://github.com/SaadHassan0288/AI-Voice-Changer.git
 
     <ImageView
         android:id="@+id/drawerBtn"
@@ -96,6 +95,7 @@
         app:layout_constraintTop_toBottomOf="@id/featuresTitle">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/btnAIVoice"
             android:layout_width="0sp"
             android:layout_height="160sp"
             android:layout_marginEnd="6sp"
@@ -149,6 +149,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/btnTextToAudio"
             android:layout_width="0sp"
             android:layout_height="160sp"
             android:layout_marginStart="6sp"
@@ -211,6 +212,7 @@
         app:layout_constraintTop_toBottomOf="@id/featureOne">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/btnAudioToAudio"
             android:layout_width="0sp"
             android:layout_height="160sp"
             android:layout_marginEnd="6sp"
@@ -264,6 +266,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/btnVideoToAudio"
             android:layout_width="0sp"
             android:layout_height="160sp"
             android:layout_marginStart="6sp"

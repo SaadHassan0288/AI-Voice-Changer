@@ -8,4 +8,6 @@
     <string name="transform_description">Transform your projects with our\ncutting-edge AI Voice Generator App.</string>
     <string name="text_nto_audio">Text\nTo Audio</string>
     <string name="audio_to_voice">Audio\nTo Voice</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

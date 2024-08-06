@@ -8,4 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="bgColor">#191D20</color>
+    <color name="boardColor">#1F222A</color>
+    <color name="btnColor">#1260FF</color>
+    <color name="btnUnselect">#616365</color>
+
 </resources>
